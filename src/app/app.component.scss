@@ -1,0 +1,50 @@
+
+$image-width:100px;
+$image-height:100px;
+$image-border-radius:50%;
+
+    html , body {
+        height: 100%;
+    }
+
+
+div.container-fluid{
+    height: 100%;
+    background-image:linear-gradient( 135deg ,green   , white  , blue ); ;
+}
+div.col.diet-prt {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    & a {
+        text: {
+            decoration: none;
+        }
+        color: rgb(161, 228, 161);
+        & figure{
+            width:fit-content;
+            & img {
+                width: $image-width;
+                height: $image-height;
+                border-radius: $image-border-radius;
+            }
+        }
+    }
+    
+}
+
+div.col.workout-prt{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    & figure{
+        width:fit-content;
+
+        & img {
+            width: $image-width;
+            height: $image-height;
+            border-radius: $image-border-radius;
+        }
+    }
+}
